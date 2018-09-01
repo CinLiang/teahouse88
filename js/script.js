@@ -63,9 +63,9 @@ $('.tborder-box').click(function(){
 // 	captions:true
 // });
 
-$('.tea-banner2').click(function(){
-	lightbox.open();
-})
+// $('.tea-banner2').click(function(){
+// 	lightbox.open();
+// })
 
 
 $(function(){
