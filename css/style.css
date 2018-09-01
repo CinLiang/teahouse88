@@ -274,9 +274,9 @@ h4, h5, h6 {
 }
 
 .timages {
-	height: 350px;
+	height: 359px;
 	border: 1px solid white;
-	background: url('../image/best-afternoon.jpg.jpg') no-repeat center;
+	background: url('../image/best-afternoon.jpg') no-repeat center;
 }
 
 .tcontent {
@@ -298,7 +298,7 @@ h4, h5, h6 {
 }
 
 .timages1 {
-	height: 350px;
+	height: 359px;
 	border: 1px solid white;
 	background: url('../image/dark.jpg') no-repeat center;
 }
