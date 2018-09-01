@@ -27,8 +27,7 @@ header{
 }
 
 .account-icon {
-	/*text-align: right;*/
-	margin-top: 10px;
+	margin-top: 20px;
 	display: inline;
 	padding-left:65px;
 }
@@ -75,6 +74,9 @@ header h1{
 	float:left;
 	color: #FE5F00;
 	margin-right:30px;
+	font-family: 'Meriend', cursive;
+	font-size:60px;
+	margin-top: 20px;
 }
 
 #teahouse h1{
@@ -166,7 +168,7 @@ header h1{
 }
 
 
-.clear-fix:before,.clear-fix:after{
+.clear-fix:before, .clear-fix:after{
 	content:"";
 	display:block;
 	clear:both;
@@ -220,14 +222,13 @@ header h1{
 
 	header li{
 		display:initial;
-		background-color:white;
+		background-color:#fff;
 		text-align:center;
 	}
 }
 
 .crescent p{
 	text-align: center;
-	/*margin:50%;*/
 	line-height: 50px;
 	padding:70px 5px 60px 80px;
 	font-size:23px;
@@ -257,10 +258,85 @@ header h1{
 
 }
 
+h4, h5, h6 {
+	color: #fff;
+}
+
 .centered-elements {
 	display: flex;
 	justify-content: center;
 	padding:30px;
+}
+
+.tea-journal h4{
+	margin-bottom: 15px;
+	text-align:center;
+}
+
+.timages {
+	height: 350px;
+	border: 1px solid white;
+	background: url('../image/cup.jpg') no-repeat center;
+}
+
+.tcontent {
+	position: absolute;
+	background: rgba(0, 0, 0, 0.5);
+	bottom: 1px;
+	padding: 0px 5px 0px 5px;
+	width: 99.5%;
+}
+
+.tcontent p {
+	font-size: 12px;
+}
+
+.timages::before {
+	display: block;
+	content: '';
+	height: 200px;
+}
+
+.timages1 {
+	height: 350px;
+	border: 1px solid white;
+	background: url('../image/cup.jpg') no-repeat center;
+}
+
+.tea-journal {
+	position: relative;
+}
+
+.tea-journal h4{
+	color:#fff;
+	text-align: center;
+}
+
+.tea-journal a{
+	display:inline-block;
+}
+
+.teajournal{
+	position: relative;
+	max-width: 800px;
+	margin: 0 auto;
+}
+
+.timages img{
+	width: 500px;
+	height:320px;
+	vertical-align: middle;
+}
+
+.tea-journal .timages{
+	bottom: 0;
+	color:#f1f1f1;
+	width: 99%;
+}
+
+
+.tsociety{
+	margin:18px;
 }
 
 .tsociety h2{
@@ -276,10 +352,10 @@ header h1{
 }
 .inner-cup, .money{
 	display: inline;
-	margin-top:20px;
+	margin-top:18px;
 	line-height: 60px;
 	color:#fff;
-	border:1px solid #fff;
+/*	border:1px solid #fff;*/
 
 }
 
@@ -295,7 +371,8 @@ header h1{
 	border: 0.5px solid #fff;
 	line-height: 40px;
 	box-sizing: border-box;
-	color:black;
+	color:#001a33;
+	background-color:rgb(211,211,211);
 }
 
 
@@ -399,8 +476,7 @@ form{
 
 .Modern-Slider .slick-dots li .slick-active{
 	background:#fff;
-	box-shadow:inset 0 0 0 2px rgba(0,0,0,.28);
-	
+	box-shadow:inset 0 0 0 2px rgba(0,0,0,.28);	
 }
 
 .Modern-Slider .slick-dots li a img{
@@ -408,31 +484,143 @@ form{
     height:100%;
 }
 
+.Modern-Slidder .slick-prev{
+	color:#FFF;
+	font-size:20px;
+	line-height: 30px;
+	position: absolute;
+	transform: translateY(-50%);
+	border:1px solid #FFF;
+	padding:8px 4px 10px;
+	z-index: 999;
+	background: rgb(255,255,255,0.4);
+	top: 50%;
+    left: 20px;
+}
+
+.Modern .slick-next{
+    color:#FFF;
+	font-size:20px;
+	line-height: 30px;
+	position: absolute;
+	transform: translateY(-50%);
+	border:1px solid #FFF;
+	padding:8px 4px 10px;
+	z-index: 999;
+	background: rgb(255,255,255,0.4);
+	top: 50%;
+    right: 20px;
+
+}
+
+.tea-intro{
+	width: 100%;
+	display: flex;
+}
+
 .tea-intro img{
 	height:300px;
-	width:200px;
-	float:left;
 	padding: 10px;
+	width:200px;
 }
 
 .tea-intro p{
-	width:500px;
-	float:right;
-	padding:10px;
-	margin:30px;
+	/*padding:10px;
+	margin:30px;*/
+	width:800px;
+	/*line-height: 20px;*/
 }
 
-.shophistory img{
-	display: inline-block;
-	height:110px;
-	width:100px;
-	padding-left: 10px;
+.history-timeline{
+	position:relative;
+	max-width: 1000px;
+	margin: 0 auto;
 }
 
+.history-timeline::after{
+	content:'';
+	position: absolute;
+	width:6px;
+	background-color: white;
+	top:0;
+	bottom:0;
+	left:50%;
+	margin-left:-3px;
+}
 
+.tcontainer{
+	padding:10px 40px;
+	position: relative;
+	background-color: inherit;
+	max-width:500px;
+}
+
+.tcontainer::after{
+	content: '';
+	position: absolute;
+	width: 25px;
+	height: 25px;
+	right: -17px;
+	background-color: white;
+	border: 4px solid #FF9F55;
+	border-radius: 50%;
+	z-index: 1;
+}
+
+.timelineleft{
+	left:-250px;
+}
+.timeline p{
+	color: #000;
+}
+.timeline h4{
+	color: #000;
+}
+
+.timelineright{
+	left:50%;
+}
+
+.timelineleft::before{
+	content:'';
+	height: 0;
+	position: absolute;
+	top:22px;
+	width:0;
+	z-index: 1;
+	right: 30px;
+	border:medium solid white;
+	border-width: 5px 0 5px 10px;
+	border-color: transparent transparent transparent white;
+}
+
+.timelineright::before{
+	content: "";
+	height:0;
+	position: absolute;
+	top:22px;
+	width: 0;
+	z-index: 1;
+	left: 30px;
+	border:medium solid white;
+	border-width: 10px 10px 10px 0;
+	border-color: transparent white transparent transparent;
+}
+
+.timelineright::after{
+	left:-16px;
+}
+
+.timeline{
+	padding: 8px 7px;
+	background-color:#fff;
+	position: relative;
+	border-radius: 6px;
+}
 
 .content-block{
-	/*border:1px solid #fff;*/
+	margin-top: 30px;
+	border:1px solid #fff;
 	color:#fff;
 	opacity: 0.3%
 	background-color:#0a1b24;
@@ -455,6 +643,12 @@ form{
 	font-size:15px;
 	text-align: center;
 	padding:18px;
+	color:#fff;
+}
+
+.tea-banner a{
+	text-decoration: none;
+	color:#fff;
 }
 
 .imgslider {
@@ -465,28 +659,30 @@ form{
 	/*border:1px solid #fff;*/
 	color:#fff;
 	width:100%;
-	height:80%;
+	margin: 35px;
+	/*height:50%;*/
 	/*float:right;*/
 }
 
 .tea-banner2 h3{
+	line-height: 20px;
 	font-size:20px;
 	padding:15px;
-	z-index: 300;
+	margin: 15px;
 }
 
-.tea-banner2{
-	/*background:url(../image/3-tile.jpg) no-repeat center;*/
+/*.tea-banner2{
+	background:url(../image/3-tile.jpg) no-repeat center;
 	width:470px;
-	height:280px;
+	height:200px;
 	padding-left:20px;
-}
+}*/
 
 .trecipe{
   width:500px;
   margin:0 auto;
   position:relative;
-  top:50px;
+  top:30px;
   left: 0;
 }
 
@@ -494,8 +690,6 @@ form{
   width:400px;
   height:300px;
 }
-
-
 
 .lipton-tea{
   position:absolute;
